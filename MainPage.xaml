@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.MainPage"
+             Title="Quiz Home">
+    <ScrollView>
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        
+        <Label Text="Welcome to the Quiz App!"
+               FontSize="26" 
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Entry  x:Name="NameEntry"
+                Placeholder="Enter your name" />
+
+        <Entry x:Name="AgeEntry"
+               Placeholder="Enter your age"
+               Keyboard="Numeric" />
+        
+        <Label Text="(Choose one option)" 
+                   FontSize="14"
+                   TextColor="Gray"
+                   HorizontalOptions="Center" />
+        
+        <Entry x:Name="QuestionCountEntry"
+               Placeholder="Enter Number of Questions"
+               TextChanged="QuestionCountEntry_TextChanged"
+               Keyboard="Numeric"
+               />
+        
+        <Label Text="OR" 
+               FontSize="16"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="DarkGoldenrod"/>
+
+        <Entry x:Name="TimeEntry"
+               Placeholder="Enter quiz time (minutes)"
+               FontSize="18"
+               TextChanged="TimeEntry_TextChanged"
+               Keyboard="Numeric" />
+        
+        <Button Text="Start Quiz"
+                Style="{StaticResource HoverButtonStyle}"
+                Clicked="StartQuiz_Clicked" />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

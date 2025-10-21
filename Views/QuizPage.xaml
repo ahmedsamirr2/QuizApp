@@ -1,0 +1,43 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.Views.QuizPage"
+             Title="Quiz">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label x:Name="CounterLabel"
+                   FontSize="18"
+                   TextColor="DarkGoldenrod" 
+                   HorizontalOptions="Start" />
+
+            <Label x:Name="QuizTimerLabel"
+                    FontSize="18"
+                    TextColor="DarkGreen"
+                    HorizontalOptions="Center"
+                    />
+            
+            <Label x:Name="QuestionTimerLabel"
+                    FontSize="18"
+                    TextColor="Crimson"
+                    HorizontalOptions="Center"
+                    />
+            
+            <Label x:Name="QuestionLabel"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black" />
+            <VerticalStackLayout x:Name="OptionsLayout" Margin="10" Spacing="10" />
+
+            <Grid x:Name="OptionsGrid"
+                  ColumnDefinitions="*,*"
+                  RowSpacing="10"
+                  ColumnSpacing="20"
+                  Margin="20,10,20,20" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
+

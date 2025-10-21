@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.Views.ResultPage"
+             Title="ResultPage">
+    <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
+        <Label x:Name="ResultLabel"
+               FontSize="22"
+               FontAttributes="Bold"
+               Margin="20"
+               Padding="10"
+               TextColor="DarkGoldenrod"
+               HorizontalOptions="Center" />
+
+        <Button Text="Finish" 
+                Clicked="OnFinishedClicked"
+                Style="{StaticResource HoverButtonStyle}"
+                BackgroundColor="DarkRed"
+                TextColor="White"
+                CornerRadius="10"
+                WidthRequest="150"
+                HeightRequest="40"/>
+    </VerticalStackLayout>
+</ContentPage>
